@@ -1,0 +1,266 @@
+:root{
+    --whiteBG : F7F7F7;
+    --secondary : #E614FF;
+    --triad : #162B45;
+    --primary : #FF1481;
+    --fullWhite : #ffffff;
+    --tersier : #6D6464 ;
+    --abuAbu : #D9D9D9;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: gothamBold;
+    src: url("Gotham Bold.otf") format("opentype");
+}
+@font-face{
+    font-family: poppinsRegular;
+    src: url("Poppins-Regular.ttf");
+}
+@font-face{
+    font-family: poppinsSemiBold;
+    src: url("Poppins-SemiBold.ttf");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: poppinsRegular, sans-serif;
+}
+/*Navbar------------------------------------------------*/
+nav{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    /* background: var(--whiteBG); */
+    background: #f7f7f7;
+    height: 80px;
+    z-index: 10;
+}
+.navigasi, .sosmedButton{
+    display: flex;
+}
+
+.centerNav, .rightNav, .leftNav{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.centerNav{
+    justify-content: space-between;
+    width: 20%;
+    padding: auto, 10%;
+}
+.leftNav{
+    width: 25%;
+    align-items: center;
+    padding-left: 5%;
+}
+.rightNav{
+    width: 25%;
+    padding-right: 5%;
+    justify-content: end;
+}
+.navTitle{
+    display: flex;
+    align-self: center;
+    font-size: 30 px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.fa-github, .fa-instagram{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+.fa-github{
+    margin-right: 15px;
+}
+/*Navbar Ed------------------------------------------*/
+
+
+/*Header----------------------------------------------*/
+header{
+    background-color: var(--abuAbu);
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    overflow-y: hidden;
+}
+.fotoW{
+    width: 90%;
+    height: 90%;
+    padding: 10% 2% 0 20%;
+    z-index: 1;
+}
+.leftSide0{
+    width: 50%;
+    padding: 10% 0 10% 8%;
+}
+.rightSide0{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+.greeting{
+    font-size: 2em;
+}
+.namaW{
+    display: flex;
+    font-size: 4em;
+    font-family: gothamBold, sans-serif;
+    color: var(--triad);
+}
+.span1{
+    margin: 0 2%;
+    color: var(--primary);
+}
+.span2{
+    margin: 0 2%;
+    color: var(--secondary);
+}
+.miniExplain{
+    margin-top: 3%;
+    font-size: 1.5em;
+    width: 90%;
+}
+.sideDot{
+    position: absolute;
+    width: 3%;
+    margin: 11% 0 0 3%;
+}
+.backDot{
+    position: absolute;
+    width: 40%;
+    margin-left: 60%;
+}
+/*Header Ed----------------------------------------------*/
+/*About----------------------------------------------*/
+.aboutMe{
+    height: 80vh;
+    display: flex;
+    padding: 8%;
+    background: rgb(203,203,203);
+    background: linear-gradient(0deg, rgba(203,203,203,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(203,203,203,1) 100%);
+    align-content: center;
+    overflow-y: hidden;
+}
+.leftSide{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+}
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: fit-content;
+}
+.leftSide h1{
+    font-family: gothamBold, sans-serif;
+    color: var(--primary);
+    font-size: 3.5em;
+    padding-bottom: 2%;
+}
+.leftSide h2, .rightSide h1{
+    font-family: poppinsSemiBold, sans-serif;
+    color: var(--tersier);
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+.leftSide p{
+    font-size: 1.5em;
+    width: 50%;
+    text-align: justify;
+}
+.span3{
+    color: var(--primary);
+}
+.span4{
+    color: var(--secondary);
+}
+.rightSide ul{
+    padding-left: 1.5em;
+}
+.skill{
+    padding-top: 2%;
+    font-size: 1.5em;
+}
+.software{
+    margin-top: 10%;
+}
+.figma{
+    padding: 0 10px;
+}
+.software *{
+    margin: 10px;
+    height: 70px;
+}
+.sideDot2{
+    position: absolute;
+    width: 3%;
+    margin: 10% -5.5%;
+    
+}
+.mainDot{
+    position: absolute;
+    width: 25%;
+    margin: 10% 37%;
+}
+.standLine{
+    position: absolute;
+    margin: 0 0 0 65%;
+    height: 75%;
+}
+.bioLine{
+    position: absolute;
+    width: 20%;
+    margin: 8% 0 0 12%;
+}
+
+
+/*About Ed----------------------------------------------*/
+/*Project----------------------------------------------*/
+.project{
+    background-color: var(--whiteBG);
+    height: 70vh;
+    display: flex;
+    align-content: center;
+    padding: 8%;
+    align-content: center;
+    overflow-y: hidden;
+}
+.leftSide{
+    height: fit-content;
+}
+.menuProject{
+    list-style-type: none;
+    font-family: gothamBold, sans-serif;
+    color: var(--tersier);
+    font-size: 2.5em;
+}
+.projectMenu{
+    margin: 2% 0;
+}
+
+
+
+
+/*Project Ed----------------------------------------------*/
