@@ -44,8 +44,19 @@ nav{
     /* background: var(--whiteBG); */
     background: #f7f7f7;
     height: 80px;
+    width: 100%;
     z-index: 10;
 }
+.navigasi:hover{
+    cursor: pointer;
+    color: #FF1481;
+
+}
+
+#certificate {
+    display: flex;
+}
+
 .navigasi, .sosmedButton{
     display: flex;
 }
@@ -61,7 +72,7 @@ nav{
 }
 .centerNav{
     justify-content: space-between;
-    width: 20%;
+    width: 25%;
     padding: auto, 10%;
 }
 .leftNav{
@@ -74,6 +85,10 @@ nav{
     padding-right: 5%;
     justify-content: end;
 }
+.fa-brands:hover{
+    /* opacity:0.5; */
+    color: #FF1481;
+}
 .navTitle{
     display: flex;
     align-self: center;
@@ -83,8 +98,9 @@ nav{
 
 }
 
-.fa-github, .fa-instagram{
+.fa-brands{
     font-size: 50px;
+    color: black;
     padding: 0;
     margin: 0;
 }
@@ -99,8 +115,8 @@ header{
     background-color: var(--abuAbu);
     display: flex;
     flex-direction: row;
-    height: 90vh;
-    overflow-y: hidden;
+    height: -10%;
+    overflow: hidden;
 }
 .fotoW{
     width: 90%;
@@ -209,6 +225,10 @@ header{
 .figma{
     padding: 0 10px;
 }
+.html, .css {
+    padding: 0 10px;
+
+}
 .software *{
     margin: 10px;
     height: 70px;
@@ -259,6 +279,175 @@ header{
 .projectMenu{
     margin: 2% 0;
 }
+.projectMenu:hover {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+
+.rightSide2::-webkit-scrollbar {
+    width: 2em;
+    height: 1em;
+} 
+
+.rightSide2::-webkit-scrollbar-track {
+    background: var(--abuAbu);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+.rightSide2::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border: 0.25em solid --primary;
+    border-radius: 100vw;
+}
+
+.rightSide2::-webkit-scrollbar-thumb:hover {
+    background: #c2035c;
+    border-color: #c2035c;
+}
+.rightSide2 {
+    width: 150vw;
+    /* width: 300px;
+    height: 200px; */
+    border: 0.5px solid #E614FF;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto; /* Scroll vertikal jika diperlukan */
+    background-color: #f8f8f8;
+}
+.gallery img, .gallery div img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin: 0.5em;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox (Modal) */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#logoProject{
+    display: flex;
+}
+#grapichDesignProject{
+    display: none;
+}
+#programmingProject{
+    display: none;
+}
+#certificate {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+
+
+.descriptionBox {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0.5em;
+}
+.titleCard {
+    font: 2em gothamBold ;
+    text-align: center;
+    color: var(--primary);
+    margin-top: 1em;
+}
+.cardDescription {
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* Setifikat------------------------ */
+
+.sertifikat {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    align-self: center;
+
+    justify-content: center;
+}
+.galeriSertif {
+    display: flex;
+    flex-direction: column;
+}
+.galeriSertif h1 {
+    text-align: center;
+    color: var(--primary);
+    font: 4em gothamBold;
+    margin-bottom: 5vh;
+}
+.titleSertif {
+    font: 1.5em poppinsSemiBold ;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 1em;
+    margin-top: -0.3em;
+}
+.sertifBaris1, .sertifBaris2, .sertifBaris3{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 400px) {
+    * {
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
