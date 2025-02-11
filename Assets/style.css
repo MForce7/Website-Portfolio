@@ -422,9 +422,9 @@ header{
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     * {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         width: 100wh;
     }
     .centerNav, .rightNav{
@@ -537,12 +537,82 @@ header{
         /* gap: 1%;  */
     }
 
+
+
+
+
+
+
+
+
+    .project {
+        flex-direction: column;
+        height: fit-content;
+        /* width: 100%; */
+        overflow-x: hidden;
+    }
+    .menuProject {
+        display: flex;
+        justify-content: space-between;
+        /* align-self: center; */
+        margin: 5% 0;
+
+    }
+    .projectMenu {
+        font-size: 0.5em;
+        align-self: center;
+        text-align: center;
+        /* justify-content: center; */
+        width: 33%;
+        margin: 0;
+    }
+    .rightSide2 {
+        /* display: flex; */
+        /* height: fit-content; */
+        width: 100%;
+        /* overflow-x: scroll; */
+    }
+    .gallery {
+        /* display: flex; */
+        overflow: scroll;
+        width: 100%;
+    }
+    .descriptionBox {
+        width: 1000px;
+    }
+
+
+
+
+
+    .galeriSertif h1 {
+        font-size: 2.5em;
+        margin: 5% 0;
+    }
+    .gallerySert {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .sertifBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* align-content: center; */
+    }
+    
+    .sertifBox img {
+        width: 100%;
+        align-self: center;
+        /* justify-content: center; */
+    }
+
 }
 
 
 
 
-@media (max-width: 760px) {
+@media (max-width: 467px) {
     * {
         overflow-x: hidden;
         width: 100wh;
