@@ -422,7 +422,7 @@ header{
 }
 
 
-@media (min-width: 760px) {
+@media (max-width: 769px) {
     * {
         overflow-x: hidden;
         width: 100wh;
