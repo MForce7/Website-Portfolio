@@ -422,17 +422,334 @@ header{
 }
 
 
-
-
-
-
-
-/* 
-@media (min-width: 400px) {
+@media (min-width: 760px) {
     * {
         overflow-x: hidden;
+        width: 100wh;
     }
-} */
+    .centerNav, .rightNav{
+        display: none;
+        width: 0;
+    }
+
+    .navigasi {
+        color: black;
+        border: none;
+        padding: 10px 20px;
+    }
+
+    .navTitle {
+        width: 100%;
+        font-size: 0.1em;
+    }
+    .leftNav {
+        width: 80%;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 10%;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .bar {
+        background-color: black;
+        height: 4px;
+        margin: 3px 0;
+        width: 2em;
+        border-radius: 8px;
+    }
+
+
+
+
+
+    header * {
+        margin: 0;
+        padding: 0;
+    }
+    .jumbotron {
+        height: fit-content;
+    }
+    .leftSide0 {
+        height: 50%;
+        margin: 0;
+        padding: 5% 0 8% 8%;
+    }
+    .greeting {
+        font-size: 1.5em;
+    }
+    .namaW {
+        font-size: 2.2em;
+    }
+    .miniExplain {
+        font-size: 1em;
+    }
+    .scrollText {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+    .aboutMe {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .leftSide {
+        width: 100%;
+    }
+    .leftSide h1 {
+        font-size: 2.5em;
+    }
+    .leftSide h2 {
+        font-size: 2em;
+    }
+    .standLine, .bioLine {
+        display: none;
+    }
+    .leftSide p {
+        width: 70%;
+        font-size: 1em;
+    }
+    .mainDot {
+        margin: 16% 0 10% 64%;
+    }
+    .sideDot2 {
+        margin-top: 16%;
+    }
+    .rightSide {
+        width: 100%;
+    }
+    .rightSide h1 {
+        margin-top: 5%;
+    }
+    .software {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        /* gap: 1%;  */
+    }
+
+}
+
+
+
+
+@media (max-width: 760px) {
+    * {
+        overflow-x: hidden;
+        width: 100wh;
+    }
+    .centerNav, .rightNav{
+        display: none;
+        width: 0;
+    }
+
+    .navigasi {
+        color: black;
+        border: none;
+        padding: 10px 20px;
+    }
+
+    .navTitle {
+        width: 100%;
+        font-size: 0.1em;
+    }
+    .leftNav {
+        width: 80%;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 15%;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .bar {
+        background-color: black;
+        height: 4px;
+        margin: 3px 0;
+        width: 2em;
+        border-radius: 8px;
+    }
+
+
+
+
+    header {
+        flex-direction: column;
+    }
+    .leftSide0{
+        width: 100%;
+    }
+    .greeting {
+        font-size: 1em;
+    }
+    .namaW {
+        font-size: 1.5em;
+    }
+    .miniExplain {
+        font-size: 0.5em;
+        width: 75%;
+    }
+    .sideDot{
+        margin: 15% 0% 0 90%;
+        width: 5%;
+    }
+    .backDot {
+        margin: 55% 0 0 20%;
+        width: 50%;
+    }
+    .scrollText {
+        display: none;
+    }
+    .rightSide0 {
+        width: 90%;
+        margin: 0 0 8% 5%;
+        background-color: var(--triad);
+        overflow-x: hidden;
+        border-radius: 8px;
+    }
+    .fotoW {
+        width: 50%;
+        padding: 0 30% 0 0%;
+    }
+
+
+    .aboutMe {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .leftSide {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    .leftSide h1 {
+        font-size: 2em;
+    }
+    .leftSide h2 {
+        font-size: 1em;
+    }
+    .leftSide p {
+        font-size: 1em;
+        width: 100%;
+    }
+    .standLine, .mainDot, .sideDot2, .bioLine {
+        display: none;
+    }
+
+
+
+    .rightSide {
+        width: 100%;
+    }
+    .software {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1%;
+        overflow: hidden;
+        margin-bottom: 5%;
+    }
+    .software img {
+        align-self: center;
+        justify-self: center;
+    }
+
+
+
+
+
+
+
+    .project {
+        flex-direction: column;
+        height: auto;
+    }
+    .leftSide {
+        height: 40%;
+    }
+    .leftSide > h1 {
+        margin-bottom: 5%;
+    }
+    .menuProject {
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .projectMenu {
+        font-size: 0.8em;
+        align-self: center;
+        justify-self: center;
+        width: 33%;
+        margin: 0;
+    }
+    .rightSide2 {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: auto;
+        /* overflow: auto; */
+    }
+    .gallery {
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height: 50%;
+
+    }
+    .descriptionBox {
+        width: 100%;
+    }
+    .gallery div img {
+        width: 90%;
+        height: 90%;
+    }
+    .titleCard {
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+    .sertifikat {
+        height: fit-content;
+        /* display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1%; */
+    }
+    .galeriSertif {
+        height: fit-content;
+    }
+    .galeriSertif h1 {
+        font-size: 3em;
+        margin: 5% 0;
+    }
+    .sertifBox {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sertifBox img {
+        width: 100%;
+        align-self: center;
+    }
+
+    
+}
 
 
 
